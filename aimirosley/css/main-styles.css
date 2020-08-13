@@ -1,0 +1,19 @@
+body 
+{
+    font-family:'Roboto',sans-serif ;
+    text-rendering:geometricPrecision;
+    
+}
+
+.right-col 
+{
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.highlight 
+{ 
+    font-size: 15px;
+    font-weight: 400;
+}
