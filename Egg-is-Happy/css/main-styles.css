@@ -1,0 +1,205 @@
+/* GENERAL */
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?13167131');
+    src: url('../font/fontello.eot?13167131#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?13167131') format('woff2'),
+         url('../font/fontello.woff?13167131') format('woff'),
+         url('../font/fontello.ttf?13167131') format('truetype'),
+         url('../font/fontello.svg?13167131#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+html, body {
+    background: #f6f0e8;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4.5vw;
+    line-height: 4vh;
+    color: #2c3e50;
+    text-rendering: geometricPrecision;
+}
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+/* NAVIGATION */
+.logo img {
+    width: 12vw;
+}
+
+
+/* FIND EGGS */
+.find-egg {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    left: 0;
+    bottom: 0;
+    background: #f89429;
+    z-index: 99;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location-icon {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+     
+      font-variant: normal;
+      text-transform: none;
+     
+      line-height: 1em;
+
+      margin-left: .2em;
+     
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* HEADER */
+.main-header {
+    position: relative;
+    background-image: url(../images/header-bg-1.svg), url(../images/header-bg-2.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, auto 100%;
+    background-position: -135px -5px, center center;
+}
+.main-header-title {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+h1 {
+    font-family: 'Boogaloo', cursive;
+    font-weight: 400;
+    font-size: 24vw;
+    line-height: 10vh;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #fcb048;
+}
+h3 {
+    color: #fcaf47;
+    width: 60vw;
+    font-size: 4.5vw;
+    font-weight: 700;
+}
+.main-header-icon {
+    display: inline-block;
+    background: url(../images/header-icon.svg) no-repeat -13px 8px;
+    width: 40vw;
+    height: 35px;
+    text-align: left;
+}
+
+
+/* RECIPE */
+.fav-recipe {
+    background: #fcaf47 url(../images/recipe-bg.svg) no-repeat center bottom;
+}
+h2 {
+    font-family: 'Boogaloo', cursive;
+    font-weight: 400;
+    font-size: 12vw;
+    line-height: 5.5vh;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #fcb048;
+}
+h2.white {
+    color: #fff;
+    padding: 17px 0px 10px 0px;
+}
+.fav-recipe figure {
+    position: relative;
+}
+.fav-recipe figure span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    font-family: 'Boogaloo', cursive;
+    font-weight: 400;
+    font-size: 6.5vw;
+    line-height: 3vh;
+    text-transform: uppercase;
+    color: #fef5e7;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.49933476808692223) 0%, rgba(0,0,0,0.03154765324098385) 79%, rgba(0,0,0,0.02874653279280459) 84%, rgba(0,0,0,0.17440479609812676) 100%);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+   /* padding: 12px; */
+    border-radius: 20px;
+}
+.img-fluid{
+    max-width: 100;
+    height: auto;
+}
+.fav-recipe figure img {
+    border-radius: 20px;
+}
+
+
+/* WELCOME */
+.welcome {
+    background: url(../images/welcome-bg.png) left 2px / 100% auto no-repeat;
+}
+
+
+/* SIGN UP */
+::placeholder{
+    color: #fcb048;
+}
+.signup {
+    background-image: url(../images/signup-arrow.svg), url(../images/signup-bg.svg);
+    background-position: 7px top, left bottom;
+    background-size: 18% auto, 127% auto;
+    background-repeat: no-repeat, no-repeat;
+}
+h4 {
+    font-family: 'Boogaloo', cursive;
+    font-weight: 400;
+    font-size: 8vw;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #ed7111;
+}
+input{
+    width: 100%;
+    padding: 10px 20px;
+    color: #fcaf47;
+    border-radius: 10px;
+    border: 1px solid #61c8d7;
+    margin: 0 0 10px 0;
+}
+input[type=submit] {
+    background-color: #61c8d7;
+    color: white; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
